@@ -1,0 +1,10 @@
+.MyinputCSS input {
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        margin: 10px auto;
+        padding: 0 20px;
+        background-color: white;
+}
+

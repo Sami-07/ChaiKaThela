@@ -1,0 +1,49 @@
+.hookSet {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 6vh 8vw 8vh 8vw;
+}
+
+.AiTeaCupImg {
+    border-radius: 50%;
+    width: 400px;
+    height: 360px;
+    /* clip-path: circle(50% at 50% 50%); */
+}
+.CatalogueHead{
+    font-size: 50px;
+   text-align: center;
+   font-weight: 1000;
+   background: linear-gradient(90deg, #00dbde, #fc00ff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.catalogueHook {
+    font-size: 3vw;
+    margin-right: 100px;                     
+}
+
+@media(max-width: 1000px) {
+    .hookSet {
+        flex-direction: column;
+    }
+
+    
+    .AiTeaCupImg {
+        width: 300px;
+        height: 280px;
+
+    }
+
+    .catalogueHook {
+        font-size: 8vw;
+        margin: 0;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+
+
+}

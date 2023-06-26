@@ -1,0 +1,65 @@
+/* body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+} */
+.mainLogo {
+    width: 60px;
+    position: relative;
+    right: 0px;
+    rotate: 15deg;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 20vh; */
+    background-color:#008000;
+    /* background-color: aqua; */
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    gap: 10px;
+    margin-top: 100px;
+   justify-content: center;
+   text-align: center;
+   }
+.logoTitle {
+    display: flex;
+    align-items: center;
+
+}
+.creator a{
+    color: white;
+    /* text-align: center; */
+    font-size: 18px;
+}
+.logoTitle p {
+    font-size: 20px;
+}
+.footerContainer{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* margin-top: 20vh; */
+ background-color:#6927FF;
+ /* background-color: aqua; */
+ color: white;
+ padding-bottom: 20px;
+ width: 100%;
+
+}
+.allNavi{
+    display: flex;
+    align-items: center;
+   
+}
+.allNavi p{
+    margin-right: 30px;
+}
+.footerContainer svg{
+    transform: rotate(180deg);
+}

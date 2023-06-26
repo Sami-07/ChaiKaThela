@@ -1,0 +1,126 @@
+.eachCustom {
+
+    background-color: white;
+    border-radius: 20px;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-columns: 15vw 37vw 5vw;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+}
+.removedFromCart{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    position:-webkit-sticky;
+    top: 10px;
+
+}
+.allIngs {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: inline-block;
+
+
+}
+
+.recipeName {
+    margin-bottom: 5px;
+
+}
+
+.ingsAdded {
+
+padding-bottom: 10px;
+
+}
+
+
+.allIngs p {
+    margin: 0;
+    padding: 0;
+}
+
+.itemImg {
+    width: 150px;
+    height: 130px;
+}
+
+.cookingDesc {
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.removeBtn {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.extremeRightCustom {
+    /* position: absolute;
+        right: 10px; */
+}
+
+.eachIng {
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+.eachIng::after {
+    content: ", ";
+}
+
+eachIng:last-child::after {
+    content: " ";
+}
+
+
+
+@media(max-width:1200px) {
+    .eachCustom {
+
+
+        width: 87vw;
+        grid-template-columns: 30vw 40vw 10vw;
+
+    }
+    .recipeName {
+margin-bottom: 10px;
+    }
+
+    .itemImg {
+        width: 120px;
+        height: 110px;
+        margin: auto;
+    }
+
+    .allIngs {
+
+        grid-template-columns: 1fr;
+
+
+    }
+
+    .cookingDesc {
+        display: block;
+    }
+    .cookingDesc p {
+       margin: 0;
+       margin-top: 10px;
+    
+    }
+}

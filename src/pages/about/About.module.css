@@ -1,0 +1,235 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+.banner {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.aboutHeading {
+    font-size: 60px;
+    text-align: center;
+    /* position: relative; */
+    /* bottom: 140px; */
+    color: white;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.outletImg {
+    width: 35%;
+    border-radius: 20px;
+}
+
+.aboutContentSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10px;
+    /* position: relative; */
+    /* bottom: 150px; */
+}
+
+.aboutContentSection2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 10px 0 10px;
+}
+
+.aboutContent {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    width: 40%;
+}
+
+.foundersHead {
+    /* position: relative; */
+    /* bottom: 100px; */
+    text-align: center;
+    font-size: 50px;
+
+    /* font-family: 'Poppins', sans-serif; */ 
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.foundersSet {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    /* position: relative; */
+    /* bottom: 100px; */
+    background-color: white;
+    padding-top: 40px;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    /* background: #FBEAFF; */
+}
+.founderBio{
+    font-size: 20px;
+    padding: 20px;
+    /* width: 50%; */
+    /* letter-spacing: 2px; */
+ 
+}
+.founder {
+    background-color: white;
+    padding: 4px 4px 0 4px;
+    /* width: 266px; */
+   border-radius: 5px;
+    /* height: 313px;
+    background: #FBEAFF; */
+    /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.founderImg1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+  
+}
+
+.founderImg2 {
+    width: 266px;
+    height: 256px;
+    border-radius: 5px;
+}
+
+.founderImg3 {
+    width: 266px;
+    height: 252.77px;
+    border-radius: 5px;
+}
+
+.founderName {
+    text-align: right;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.founderRole{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.founderFullName{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.visionSection {
+    /* position: relative; */
+    /* bottom: 70px; */
+
+}
+
+.visionHead {
+    font-size: 40px;
+    position: relative;
+    padding-left: 16%;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.visionBox {
+    background-color: #6927FF;
+    color: white;
+    width: 70%;
+    height: 150px;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.visionBox p {
+    line-height: 1.5;
+    font-size: 17px;
+    padding: 0 20px;
+}
+@media (max-width: 1000px) {
+    .banner {
+        margin-top: 70px;
+        height: 200px;
+    }
+    .aboutContentSection{
+        flex-direction: column;
+    }
+    .outletImg{
+width: 90%;
+    }
+    .visionHead {
+        padding-left: 0;
+  
+        text-align: center;
+    }
+
+    .foundersHead {
+margin: 0;
+margin: 20px 0 20px 0;
+padding: 0;
+    }
+    .founderBio{
+        text-align: center;
+        /* margin: 0; */
+        padding: 0;
+        padding: 0 20px;
+padding-bottom: 10px;
+    }
+    .aboutContent{
+        width: 95%;
+        padding: 10px;
+    }
+    .foundersSet{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        /* margin-top: 0; */
+    }
+    .founder{
+        /* margin-bottom: 40px; */
+        /* margin: 0; */
+        width: 240px;
+        height: 300px;
+    }
+    .founderImg1 {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .founderImg2 {
+        width: 240px;
+        height: 220px;
+    }
+    
+    .founderImg3 {
+        width: 240px;
+        height: 240px;
+    }
+    .visionBox{
+        height: 350px;
+    }
+    .visionBox p {
+      padding: 0;
+    }
+}

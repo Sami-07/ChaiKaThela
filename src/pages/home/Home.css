@@ -1,0 +1,185 @@
+
+.homePageImg {
+    width: 460px;
+    height: 460px;
+    /* rotate: 15deg; */
+    margin-right: 50px;
+}
+
+.homeHook {
+    font-size: 50px;
+    margin-left: 20px;
+    max-width: 100%;
+    /* display: inline-flex; */
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.hookBtns{
+    display: flex;
+    gap: 10px;
+}
+.userNameHome{
+    text-align: center;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin: 0;
+}
+
+/* .mySpan {
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 5s,
+        cursor .4s step-end infinite alternate;
+} */
+
+.active {
+    visibility: visible;
+    transition: ease-in-out;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.homeHook .mySpan {
+    position: relative;
+}
+
+.homeHook .mySpan2 {
+    position: relative;
+   
+}
+
+.cursorAnimation {
+    border-right: 3px solid ;
+    animation: cursor .4s step-end infinite alternate;
+}
+
+.homeHook .mySpan::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    animation: typing 2s steps(250);
+    
+    animation-fill-mode: forwards;
+}
+
+.homeHook .mySpan2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    animation: typing2 2s steps(250);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0%;
+    }
+}
+
+@keyframes typing2 {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+        width: 0%;
+
+    }
+}
+
+.homeHook .strickThrough {
+    text-decoration: line-through;
+    text-decoration-color: #D99F60;
+    text-decoration-thickness: 3px;
+
+}
+
+.homeHook .span2 {
+    font-size: 45px;
+
+
+
+}
+
+.homeComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0vh 80px 100px 80px;
+}
+
+.buttonFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.buttonFlex a{
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .homeComponent {
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 50px;
+        margin-top: 100px;
+
+    }
+    .hookBtns{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .homePageImg {
+        width: 320px;
+        height: 320px;
+        margin-right: 0;
+
+
+
+    }
+    .userNameHome{
+font-size: 30px;
+margin-top: 5vh;
+    }
+
+    .homeHook {
+        font-size: 2rem;
+        text-align: center;
+        /* margin-top: 90px; */
+        margin-bottom: 50px;
+    }
+
+    .homeHook .span2 {
+        font-size: 2rem;
+
+
+
+    }
+  
+    .buttonFlex,
+    .homeHook {
+        margin-left: 0;
+    }
+}

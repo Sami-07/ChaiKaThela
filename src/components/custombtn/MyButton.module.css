@@ -1,0 +1,22 @@
+.viewbtn {
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 66px;
+    background-color: #6927FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.viewbtn a{
+
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

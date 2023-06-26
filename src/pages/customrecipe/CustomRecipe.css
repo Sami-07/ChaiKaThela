@@ -1,0 +1,235 @@
+.customRecipeMain {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 6vh 8vw 8vh 8vw;
+    margin-top: 100px;
+    position: relative;
+}
+
+.customRecipeHookImg {
+    border-radius: 50%;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hook1 {
+    font-size: 3vw;
+    margin-right: 100px;
+    margin-bottom: 0;
+    color: #6927FF;
+    font-weight: 500;
+    width: 50vw;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hook2 {
+    font-size: 2.5vw;
+    width: 50vw;
+
+}
+
+.inst1 {
+    font-size: 18px;
+    margin-left: 20px;
+    width: 50vw;
+    opacity: 0.8;
+}
+
+.customIngredientsHead {
+    color: #6927FF;
+}
+
+.RecipeNameInputDiv {
+    margin-left: 20px;
+}
+
+.defaultIngredients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40vw;
+    column-gap: 30px;
+    margin-left: 20px;
+
+
+}
+
+.customIngredients {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 40vw;
+    column-gap: 30px;
+
+}
+
+.customIngredientsHead {
+    margin-left: 20px;
+}
+
+.ingrList {
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 200px;
+    font-size: 15px;
+    /* REMOVE THIS WIDTH AND HEIGHT AFTERWARDS */
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+.eachPrintIng {
+    margin: 0;
+    margin-bottom: 7px;
+}
+
+.flexList {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;   */
+
+}
+
+
+.flexList input {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px auto;
+    padding: 0 20px;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+
+    border: 1px solid gray;
+}
+
+.inputBtnDiv{
+    display: flex;
+    flex-direction: column;
+    
+}
+.btnC{
+    margin-left: 20px;
+}
+.instructionsHead {
+    padding: 20px 0 20px 20px;
+}
+
+.recipeDesc {
+
+    height: 150px;
+    resize: none;
+    border-radius: 10px;
+    margin: 5px 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: none;
+    width: 70%;
+    /* background-color: #FBEAFF; */
+    border: 1px solid gray;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+  
+}
+
+.successSubmit {
+    font-size: 25px;
+    /* text-align: left; */
+    margin-left: 10px;
+    color: #6927FF;
+}
+
+@media(max-width: 1000px) {
+    .customRecipeMain {
+        flex-direction: column;
+    }
+
+    .hook1,
+    .hook2 {
+
+        margin: 0;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .hook1 {
+        font-size: 7vw;
+    }
+
+
+    .hook2 {
+        font-size: 6vw;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+
+
+    .customIngredients {
+        display: block;
+
+
+
+    }
+
+    .flexList {
+        flex-direction: column;
+
+    }
+
+    .customIngredientsHead {
+        width: 90%;
+        padding-right: 10px;
+    }
+
+    .inst1 {
+        width: 90%;
+    }
+
+    .ingrList {
+        margin: 40px auto;
+        /* CHANGE THIS MARGIN AFTERWARDS */
+    }
+
+    .ingForms {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80vw;
+        margin: auto;
+    }
+    .ingForms input {
+     
+        width: 70vw;
+        margin: auto;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .instructionsHead {
+        padding: 0;
+        /* text-align: center; */
+        margin: 40px auto 20px auto;
+        /* margin: auto; */
+        width: 90vw;
+    }
+
+    .recipeDesc {
+        width: 90%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,160 @@
+.contactHead {
+    text-align: center;
+    font-size: 45px;
+    padding: 0;
+    margin: 30px auto 10px auto;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contactSubHead {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.contactBox {
+    margin-top: 50px;
+ width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+.contactCol1 {
+    background-color: #6927FF;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px 10px 10px;
+
+}
+
+.contactCol1 p {
+    color: white;
+    padding: 0 20px;
+}
+
+.contactHead2 {
+    font-size: 22px;
+}
+
+.contactDesc {
+    opacity: 0.7;
+}
+
+.contactCol2 {
+    background-color: #FBEAFF;
+    background-color: white;
+    width: 700px;
+    height: 450px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    /* padding-top: 10px; */
+    padding: 10px 20px;
+}
+
+.contactDetails {
+    max-width: 260px;
+    margin: 40px auto 0 auto;
+}
+
+.icon1 {
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    padding: 5px;
+}
+
+.contact1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contactCol2 input {
+width: 250px;
+    margin: 10px;
+    /* height: 40px; */
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    /* background-color: #FBEAFF; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+/* .contactCol2 input:focus{
+    border-color: #6927FF; 
+} */
+
+.subCol2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 60px 60px;
+}
+
+.subdiv2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 60px;
+}
+input::placeholder{
+font-family: "Work Sans";
+}
+textarea::placeholder{
+    font-family: "Work Sans"; 
+}
+textarea{
+    height: 150px;
+    resize: none;
+    border-radius: 10px;
+    margin: 5px 10px ;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: none;
+    /* background-color: #FBEAFF; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+@media(max-width: 750px){
+    .contactBox {
+flex-direction:column ;
+width: 100%;
+
+
+    }
+    .contactCol2 input {
+width: 140px;
+border: 1px solid;
+    }
+    textarea{
+       border: 1px solid;
+       
+    }
+    .contactCol2{
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+        border-radius: 20px;
+        padding-bottom: 30px;
+    }
+    .contactCol1{
+        /* width: 93%; */
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    .subCol2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-rows: 60px 60px;
+    }
+    /* .contactCol2 input {
+margin: 0;
+      margin: 7px 0;
+   
+    } */
+}

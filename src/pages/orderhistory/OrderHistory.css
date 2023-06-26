@@ -1,0 +1,28 @@
+.accountName, .ordersHead{
+    text-align: center;
+}
+.accountName{
+    font-size: 40px;
+    margin: 0;
+    margin-top: 100px;
+    color: #6927FF ;
+    font-weight: 1000;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.ordersHead{
+    
+    font-size: 30px;
+
+}
+.ordersHistoryMain{
+    min-height: 100vh;
+}
+
+
+@media(max-width:1200px) {
+    .accountName{
+        margin-top: 150px; 
+    }
+}
