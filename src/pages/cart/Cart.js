@@ -23,7 +23,7 @@ export default function Cart() {
     const { user } = useAuthContext()
     const { addDocument, response } = useFirestore("users")
     const { documents, error } = useCollection("cart", ["uid", "==", user.uid])
-    const { documents: customOrders, error2 } = useCollection("custom Recipe", ["uid", "==", user.uid])
+    const { documents: customOrders, error2 } = useCollection("customRecipe", ["uid", "==", user.uid])
     const { addDocument: addAddress, response2 } = useFirestore("addresses")
     const [Fname, setFname] = useState("")
     const [Lname, setLname] = useState("")
