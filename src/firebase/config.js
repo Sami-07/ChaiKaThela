@@ -9,7 +9,7 @@ const firebaseConfig = {
     authDomain: "chaikathela7.firebaseapp.com",
     projectId: "chaikathela7",
     storageBucket: "chaikathela7.appspot.com",
-    messagingSenderId: "165004505667",
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
     appId: process.env.REACT_APP_APP_ID
 };
 
