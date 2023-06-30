@@ -2,10 +2,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* max-width: 1200px; */
     margin: 20px auto;
-
-margin-right: 20px;
+    margin-right: 20px;
 }
 
 .themeButtons div {
@@ -17,17 +15,15 @@ margin-right: 20px;
     border-radius: 50%;
 
 }
-.customiseThemeP{
-    /* text-align: center; */
-   margin-left: 10px;
+
+.customiseThemeP {
+    margin-left: 10px;
 }
 
 @media (max-width: 1000px) {
     .themeSelector {
-
         position: relative;
         top: 10px;
-        /* right: 30px;   */
         flex-direction: column;
         justify-content: center;
     }
@@ -35,7 +31,5 @@ margin-right: 20px;
     .themeButtons div {
         width: 35px;
         height: 35px;
-      
-
     }
 }

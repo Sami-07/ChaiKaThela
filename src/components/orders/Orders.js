@@ -1,9 +1,7 @@
 import "./Orders.css"
 import TransparantTeaAI from "../../images/TransparantTeaAI.png"
-import MyButton from "../custombtn/MyButton";
 import { useFirestore } from "../../hooks/useFirestore"
 import { useState } from "react";
-import Backdrop from "../../components/backdrop/Backdrop"
 import { useTheme } from "../../hooks/useTheme"
 
 export default function Orders({ orders }) {  
@@ -77,16 +75,9 @@ export default function Orders({ orders }) {
 
                             </div>
                         ))}
-
                     </div>
-
                 ))}
-
             </div> : ""}
-
-       
-
-
 
         </div>
     )

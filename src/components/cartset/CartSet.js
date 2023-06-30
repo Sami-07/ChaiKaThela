@@ -1,16 +1,14 @@
 import styles from "./CartSet.module.css"
 import { useFirestore } from "../../hooks/useFirestore"
 import { useState, useEffect } from "react";
+
 export default function CartSet({ cartItems }) {
     const { deleteDocument, response } = useFirestore("cart")
     const [deleted, setDeleted] = useState(false)
-
-   
-
     return (
         <div> {deleted && <p className={styles.removedFromCart}>Removed from Cart.</p>}
+     
             <div className={styles.cartPage}>
-
                 <div>
                     {cartItems.map((item) => (
                         <div className={styles.eachCart}>
@@ -33,10 +31,6 @@ export default function CartSet({ cartItems }) {
                                 deleteDocument(item.id).then(
                                     () => {
                                         setDeleted(true)
-                                        // setTimeout(() => {
-                                        //     setDeleted(false);
-                                         
-                                        // }, 2000);
                                         window.location.reload()
                                     }
                                 )
@@ -45,7 +39,6 @@ export default function CartSet({ cartItems }) {
                         </div>
                     ))}
                 </div>
-
             </div>
         </div>
     )

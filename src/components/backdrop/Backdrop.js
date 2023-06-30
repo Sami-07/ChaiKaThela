@@ -1,10 +1,10 @@
 import "./Backdrop.css"
-export default function Backdrop({ text }) {
+import { ClipLoader } from "react-spinners"
+export default function Backdrop() {
     return (
-        <div className="backdrop">
-        <div className="backdropCenter">
-            {text}
-            </div>
+        <div className="backDropMain">
+            <h1>Loading</h1>
+            <ClipLoader color="brown" size={50} />
         </div>
     )
 }

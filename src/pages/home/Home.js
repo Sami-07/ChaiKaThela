@@ -1,5 +1,4 @@
 import "./Home.css"
-import homeImg from "../../images/homeImg.png"
 import MyButton from "../../components/custombtn/MyButton"
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
@@ -10,9 +9,8 @@ import AiTea2 from "../../images/AiTea2.png"
 import AOS from "aos"
 import "aos/dist/aos.css";
 import { useTheme } from "../../hooks/useTheme"
-
 import { useAuthContext } from "../../hooks/useAuthContext"
-
+import Backdrop from "../../components/backdrop/Backdrop"
 export default function Home() {
     const { color, changeColor } = useTheme()
     const { user } = useAuthContext()
@@ -22,7 +20,6 @@ export default function Home() {
     const [classActive, setClassActive] = useState(false)
     useEffect(() => {
         const interval = setInterval(() => {
-            // setClassActive((prevClassActive) => !prevClassActive)
             setClassActive(true)
         }, 4000)
         return () => {
@@ -39,19 +36,12 @@ export default function Home() {
             clearInterval(interval)
         }
     }, [])
-
-
-
     return (
         <div data-aos="fade-up">
- {/* <p className="userNameHome">Welcome, {user.displayName}</p> */}
             <div className="homeComponent" >
-
                 <img className="homePageImg" src={AiTea2} />
-
                 <div className="buttonFlex">
                     <div className="homeHook">
-                       
                         <span className="mySpan">
                             True <span className={`span2 ${classActive ? "strickThrough" : ""}`}>Chai</span> <span className="span2"> चाय  </span>    Lovers
                         </span>
@@ -70,9 +60,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
             <About />
-
             <Catalogue />
             <Contact />
         </div>

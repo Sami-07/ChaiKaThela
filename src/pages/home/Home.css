@@ -1,8 +1,6 @@
-
 .homePageImg {
     width: 460px;
     height: 460px;
-    /* rotate: 15deg; */
     margin-right: 50px;
 }
 
@@ -10,15 +8,16 @@
     font-size: 50px;
     margin-left: 20px;
     max-width: 100%;
-    /* display: inline-flex; */
     display: inline-block;
     margin-bottom: 20px;
 }
-.hookBtns{
+
+.hookBtns {
     display: flex;
     gap: 10px;
 }
-.userNameHome{
+
+.userNameHome {
     text-align: center;
     font-weight: 1000;
     background: linear-gradient(90deg, #00dbde, #fc00ff);
@@ -27,16 +26,6 @@
     font-size: 30px;
     margin: 0;
 }
-
-/* .mySpan {
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 5s,
-        cursor .4s step-end infinite alternate;
-} */
 
 .active {
     visibility: visible;
@@ -55,11 +44,11 @@
 
 .homeHook .mySpan2 {
     position: relative;
-   
+
 }
 
 .cursorAnimation {
-    border-right: 3px solid ;
+    border-right: 3px solid;
     animation: cursor .4s step-end infinite alternate;
 }
 
@@ -71,7 +60,7 @@
     width: 100%;
     background-color: white;
     animation: typing 2s steps(250);
-    
+
     animation-fill-mode: forwards;
 }
 
@@ -132,7 +121,8 @@
     justify-content: center;
     margin-left: 50px;
 }
-.buttonFlex a{
+
+.buttonFlex a {
     text-decoration: none;
 }
 
@@ -144,7 +134,8 @@
         margin-top: 100px;
 
     }
-    .hookBtns{
+
+    .hookBtns {
         flex-direction: column;
         margin: 0;
         padding: 0;
@@ -159,9 +150,10 @@
 
 
     }
-    .userNameHome{
-font-size: 30px;
-margin-top: 5vh;
+
+    .userNameHome {
+        font-size: 30px;
+        margin-top: 5vh;
     }
 
     .homeHook {
@@ -177,7 +169,7 @@ margin-top: 5vh;
 
 
     }
-  
+
     .buttonFlex,
     .homeHook {
         margin-left: 0;

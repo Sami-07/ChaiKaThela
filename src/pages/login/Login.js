@@ -1,5 +1,4 @@
 import styles from "./Login.module.css"
-import MyInput from "../../components/myinput/MyInput"
 import MyButton from "../../components/custombtn/MyButton"
 import TeaCheers from "../../images/TeaCheers.png"
 import { useLogin } from "../../hooks/useLogin"

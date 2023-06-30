@@ -10,15 +10,13 @@ import Cart from "./pages/cart/Cart"
 import ThemeSelector from "./components/themeselector/ThemeSelector"
 import Footer from "./components/footer/Footer"
 import { useAuthContext } from "./hooks/useAuthContext"
-import { useEffect } from "react"
-
 import CustomRecipe from "./pages/customrecipe/CustomRecipe"
 import OrderHistory from "./pages/orderhistory/OrderHistory"
 import { useTheme } from "./hooks/useTheme"
 
 export default function App() {
   const { authIsReady, user } = useAuthContext()
-  const {color, backgroundColor , changeColor} = useTheme()
+  const { color, backgroundColor, changeColor } = useTheme()
 
   return (
     // <div className="App" style={{backgroundColor : {color} === "brown" ? "FAEAB1" : ""}} >
@@ -26,52 +24,60 @@ export default function App() {
 
       {authIsReady && (
         <BrowserRouter>
-        {/* <ScrollToTop /> */}
+
           <Navbar />
+
           <ThemeSelector />
+
           <Switch>
+
             <Route exact path="/">
               {!user && <Redirect to="/signup" />}
               {user && <Home />}
             </Route>
-            <Route path="/about">
 
+            <Route path="/about">
               <About />
             </Route>
+
             <Route path="/catalogue">
               {!user && <Redirect to="/signup" />}
               {user && <Catalogue />}
-
             </Route>
+
             <Route path="/contact">
               <Contact />
             </Route>
+
             <Route path="/signup">
               {user && <Redirect to="/" />}
               {!user && <Signup />}
             </Route>
+
             <Route path="/login">
               {user && <Redirect to="/" />}
               {!user && <Login />}
             </Route>
+
             <Route path="/cart">
               {!user && <Redirect to="/signup" />}
-              {user && <Cart/>}
-
+              {user && <Cart />}
             </Route>
-        
-           
+
             <Route path="/brewtea">
               {!user && <Redirect to="/signup" />}
               {user && <CustomRecipe />}
             </Route>
+
             <Route path="/profile">
               {!user && <Redirect to="/signup" />}
               {user && <OrderHistory />}
             </Route>
-           
+
           </Switch>
+
           <Footer />
+
         </BrowserRouter>
       )}
     </div>

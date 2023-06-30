@@ -22,16 +22,13 @@ export function ThemeProvider({ children }) {
     })
     function changeColor(color) {
         dispatch({ type: "CHANGE_COLOR", payload: {...state, color } })
-
     }
     function changeBackground(backgroundColor) {
         dispatch({ type: "CHANGE_BG",payload: { ...state, backgroundColor }  })
-
     }
     return (
         <ThemeContext.Provider value={{ ...state, changeColor }}>
             {children}
         </ThemeContext.Provider>
-
     )
 }

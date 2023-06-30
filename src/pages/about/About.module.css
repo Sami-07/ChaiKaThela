@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
 .banner {
     width: 100%;
@@ -10,8 +9,6 @@
 .aboutHeading {
     font-size: 60px;
     text-align: center;
-    /* position: relative; */
-    /* bottom: 140px; */
     color: white;
     font-weight: 1000;
     background: linear-gradient(90deg, #00dbde, #fc00ff);
@@ -29,8 +26,6 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 10px;
-    /* position: relative; */
-    /* bottom: 150px; */
 }
 
 .aboutContentSection2 {
@@ -49,12 +44,8 @@
 }
 
 .foundersHead {
-    /* position: relative; */
-    /* bottom: 100px; */
     text-align: center;
     font-size: 50px;
-
-    /* font-family: 'Poppins', sans-serif; */ 
     font-weight: 1000;
     background: linear-gradient(90deg, #00dbde, #fc00ff);
     -webkit-background-clip: text;
@@ -63,34 +54,25 @@
 
 .foundersSet {
     display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
     justify-content: center;
-    /* gap: 10px; */
-    /* position: relative; */
-    /* bottom: 100px; */
     background-color: white;
     padding-top: 40px;
     gap: 20px;
     width: 80%;
     margin: auto;
-    /* background: #FBEAFF; */
 }
-.founderBio{
+
+.founderBio {
     font-size: 20px;
     padding: 20px;
-    /* width: 50%; */
-    /* letter-spacing: 2px; */
- 
+
 }
+
 .founder {
     background-color: white;
     padding: 4px 4px 0 4px;
-    /* width: 266px; */
-   border-radius: 5px;
-    /* height: 313px;
-    background: #FBEAFF; */
-    /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25); */
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +83,7 @@
     height: 300px;
     border-radius: 50%;
     background: linear-gradient(90deg, #00dbde, #fc00ff);
-  
+
 }
 
 .founderImg2 {
@@ -120,23 +102,19 @@
     text-align: right;
     font-size: 30px;
     font-weight: 500;
-    
+
 }
-.founderRole{
+
+.founderRole {
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
-.founderFullName{
+
+.founderFullName {
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
-}
-
-.visionSection {
-    /* position: relative; */
-    /* bottom: 70px; */
-
 }
 
 .visionHead {
@@ -167,69 +145,79 @@
     font-size: 17px;
     padding: 0 20px;
 }
+
 @media (max-width: 1000px) {
     .banner {
         margin-top: 70px;
         height: 200px;
     }
-    .aboutContentSection{
+
+    .aboutContentSection {
         flex-direction: column;
     }
-    .outletImg{
-width: 90%;
+
+    .outletImg {
+        width: 90%;
     }
+
     .visionHead {
         padding-left: 0;
-  
+
         text-align: center;
     }
 
     .foundersHead {
-margin: 0;
-margin: 20px 0 20px 0;
-padding: 0;
+        margin: 0;
+        margin: 20px 0 20px 0;
+        padding: 0;
     }
-    .founderBio{
+
+    .founderBio {
         text-align: center;
         /* margin: 0; */
         padding: 0;
         padding: 0 20px;
-padding-bottom: 10px;
+        padding-bottom: 10px;
     }
-    .aboutContent{
+
+    .aboutContent {
         width: 95%;
         padding: 10px;
     }
-    .foundersSet{
+
+    .foundersSet {
         flex-direction: column;
         align-items: center;
         padding: 0;
-        /* margin-top: 0; */
+
     }
-    .founder{
-        /* margin-bottom: 40px; */
-        /* margin: 0; */
+
+    .founder {
+
         width: 240px;
         height: 300px;
     }
+
     .founderImg1 {
         width: 260px;
         height: 260px;
     }
-    
+
     .founderImg2 {
         width: 240px;
         height: 220px;
     }
-    
+
     .founderImg3 {
         width: 240px;
         height: 240px;
     }
-    .visionBox{
+
+    .visionBox {
         height: 350px;
     }
+
     .visionBox p {
-      padding: 0;
+        padding: 0;
     }
 }

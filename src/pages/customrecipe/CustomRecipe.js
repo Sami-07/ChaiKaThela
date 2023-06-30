@@ -7,12 +7,13 @@ import { useFirestore } from "../../hooks/useFirestore"
 import { useAuthContext } from "../../hooks/useAuthContext"
 import AOS from "aos"
 import "aos/dist/aos.css";
-
+import Backdrop from "../../components/backdrop/Backdrop"
 import { useTheme } from "../../hooks/useTheme"
 
 export default function CustomRecipe() {
     const { color, changeColor } = useTheme()
     const { user } = useAuthContext()
+    const [isPending, setIsPending] = useState(false)
     useEffect(() => {
         AOS.init({ duration: 2000 })
     }, [])
@@ -24,15 +25,16 @@ export default function CustomRecipe() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const ingredientInput = useRef(null)
     function handleSubmit(e) {
+        setIsPending(true)
         e.preventDefault();
         addDocument({ recipeName: recipeName, customIngs: ingredients, price: 69, cookingInstr: recipeDesc, uid: user.uid }).then(() => {
+            setTimeout(()=>{
+                setIsPending(false)
+            },1000)
             setIsSubmitted(true);
-
-            // Reset the isSubmitted state after 5 seconds
             setTimeout(() => {
                 setIsSubmitted(false);
             }, 4000);
-        
             setRecipeName("");
             setRecipeDesc("");
             setIngredients([]);
@@ -51,7 +53,7 @@ export default function CustomRecipe() {
     }
     return (
         <div data-aos="fade-up" >
-
+   {isPending ? <Backdrop /> : ""}
             <div className="customRecipeMain"  >
 
                 <div class="customRecipeHookImg">
@@ -86,6 +88,7 @@ export default function CustomRecipe() {
                             {!isSubmitted && <MyButton btnText="ADD TO CART" width="150px" fontSize="17px" borderRadius="10px" height="50px" bgColor={color}></MyButton>}
 
                         </form>
+                     
                         {isSubmitted && <MyButton btnText="ADDED" width="150px" fontSize="17px" borderRadius="10px" height="50px" bgColor="green" ></MyButton>}
                     </div>
                 </div>

@@ -8,10 +8,8 @@ import { useLogout } from "../../hooks/useLogout"
 import { useAuthContext } from "../../hooks/useAuthContext"
 import { useTheme } from "../../hooks/useTheme"
 
-
 export default function Navbar() {
-    const { color , changeColor} = useTheme()
-
+    const { color, changeColor } = useTheme()
     const NavClick = () => {
         window.scrollTo(0, 0);
         setClicked(false)
@@ -36,8 +34,8 @@ export default function Navbar() {
                             चाय का ठेला
                         </div>
                     </div>
-                    <div className={`right ${clicked ? "active" : ""}`}  style={{ background: color }}>
-                     
+                    <div className={`right ${clicked ? "active" : ""}`} style={{ background: color }}>
+
                         <li className="title">
                             <NavLink to="/" onClick={NavClick}>
                                 Home
@@ -69,13 +67,10 @@ export default function Navbar() {
                                 Profile
 
                             </NavLink>                    </li>
-
                         {user && <button className="title" onClick={logout} style={{ background: "transparent", border: "none", fontFamily: "Work Sans", fontSize: "16px", cursor: "pointer", display: "flex", justifyContent: "center" }}>
                             Logout
                         </button>}
-
                     </div>
-
                 </div>
             </nav>
             <div className="hamDiv">
@@ -90,9 +85,7 @@ export default function Navbar() {
                 <Link to="/cart">
                     <img src={cartIcon} className={`cartIcon ${clicked ? "cartIconResp" : ""}`} style={{ background: color }} ></img>
                 </Link>
-
             }
-
         </div>
     )
 }

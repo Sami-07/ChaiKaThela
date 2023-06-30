@@ -1,5 +1,4 @@
 import "./ReadyToDrinkCatalogue.css"
-
 import MyButton from "../../components/custombtn/MyButton"
 export default function ReadyToDrinkCatalogue({ items }) {
     return (

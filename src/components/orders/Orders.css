@@ -13,37 +13,26 @@
 
 .ordersTop {
     background-color: aliceblue;
-    /* display: flex; */
-    /* gap: 50px; */
-    /* justify-content: space-between; */
-    /* justify-content: center; */
     padding: 0 40px;
     border-radius: 20px 20px 0 0;
-display: grid;
-grid-template-columns: 2fr 1fr 2fr 3fr;
-
-
-
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 3fr;
 }
 
 .eachOrder {
-
     display: flex;
     margin: 10px;
     justify-content: space-between;
- 
 }
 
 .eachOrderImg {
     width: 50px;
     margin-right: 20px;
-border-radius: 10px;
-
+    border-radius: 10px;
 }
 
 .ordersNamePrice {
     display: flex;
-
 }
 
 .cancelOrder {
@@ -56,50 +45,44 @@ border-radius: 10px;
     color: white;
     margin: auto;
 }
-.cancelledResponse{
+
+.cancelledResponse {
     font-size: 20px;
     text-align: center;
     background-color: #6927FF;
     color: white;
-    /* height: 50px; */
     width: 80vw;
     margin: auto;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border-radius: 10px;
-   padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
 }
+
 .orderItemName {
     margin-right: 40px;
 }
-.eachOrderPrice{
-    width:70px;
- margin-right: 10px;
+
+.eachOrderPrice {
+    width: 70px;
+    margin-right: 10px;
 
 
 }
+
 @media(max-width:1200px) {
 
-    /* .eachCart {
-        width: 90vw;
-        display: flex;
-        gap: 10px;
-        margin: 0;
-        margin: 10px 0;
-        padding: 0;
-        padding: 10px 0;
-        position: relative;
-
-    } */
     .ordersTop {
         padding: 0 20px;
-gap: 20px;
+        gap: 20px;
     }
-    .cancelOrder{
+
+    .cancelOrder {
         height: 40px;
         font-size: 12px;
     }
+
     .eachBox {
         width: 90vw;
     }

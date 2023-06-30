@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    /* background-color: #00B98E; */
     background-color: #3DDFB2;
     top: 4vh;
 }
@@ -36,11 +35,9 @@
 }
 @media(max-width : 1000px) {
     .loginBox {
-        /* width: 400px; */
         width: 100%;
         margin: 0;
         padding: 0;
         margin-bottom: 90px;
-        /* margin-left: 30px; */
     }
 }

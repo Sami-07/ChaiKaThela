@@ -1,17 +1,10 @@
 import styles from "./About.module.css"
-import aboutBanner from "../../images/aboutBanner.png"
-import bannerTea from "../../images/bannerTea.jpg"
 import CSBoutlet from "../../images/CSBoutlet.jpg"
 import CSBoutlet2 from "../../images/CSBoutlet2.jpg"
 import founder from "../../images/founder.png"
-// import elonImg from "../../images/elonImg.jpg"
-import elonImg from "../../images/elon2.jpg"
-import mark2 from "../../images/mark2.jpg"
-import steveImg from "../../images/steveImg.jpg"
 import AOS from "aos"
 import "aos/dist/aos.css";
 import { useTheme } from "../../hooks/useTheme"
-
 import { useEffect } from "react"
 export default function About() {
     useEffect(() => {
@@ -20,7 +13,6 @@ export default function About() {
     const { color, changeColor } = useTheme()
     return (
         <div className={styles.mainAbout} data-aos="fade-up">
-            {/* <img className={styles.banner} src={aboutBanner}  ></img> */}
             <p className={styles.aboutHeading}>About Us</p>
             <div className={styles.aboutContentSection} >
                 <img className={styles.outletImg} src={CSBoutlet} data-aos="fade-up" ></img>
@@ -43,14 +35,6 @@ export default function About() {
                        "Our mission is to ensure that every Indian gets to experience the exquisite delight of the finest tea, all at affordable prices. We believe that tea is not just a beverage, but an experience that should be cherished and accessible to all."</p>
                     <div className={styles.founderName}><p className={styles.founderFullName}>Shaikh Abdul Sami</p><p className={styles.founderRole} style={{ color : color }}>Founder and CEO, Chai ka Thela</p></div>
                 </div>
-                {/* <div className={styles.founder} data-aos="fade-up">
-                    <img className={styles.founderImg2} src={mark2}></img>
-                    <p className={styles.founderName}>Mark Zuckerberg</p>
-                </div>
-                <div className={styles.founder} data-aos="fade-up">
-                    <img className={styles.founderImg3} src={steveImg}></img>
-                    <p className={styles.founderName}>Steve Jobs</p>
-                </div> */}
             </div>
             <div className={styles.visionSection} data-aos="fade-up">
                 <p className={styles.visionHead} data-aos="fade-up">Our Vision</p>

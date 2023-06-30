@@ -1,9 +1,5 @@
 import styles from "./Catalogue.module.css"
 import AiTeaCup from "../../images/AiTeaCup.jpg"
-import HillTea from "../../images/HillTea.png"
-import chaayos from "../../images/chaayos.png"
-import Teabay from "../../images/Teabay.png"
-import TeaSense from "../../images/TeaSense.png"
 import Products from "../../components/productsSet/Products"
 import { useCollection } from "../../hooks/useCollection"
 import AOS from "aos"
@@ -14,12 +10,11 @@ export default function Catalogue() {
         AOS.init({ duration: 3000 })
     }, [])
     const { documents, error } = useCollection("products")
-  
+
     return (
         <div data-aos="fade-up">
             <p className={styles.CatalogueHead} fade-up>Catalogue</p>
             <div className={styles.hookSet}>
-
                 <div class={styles.curvedImageContainer}>
                     <img src={AiTeaCup} className={styles.AiTeaCupImg} />
                 </div>
@@ -28,9 +23,7 @@ export default function Catalogue() {
                     our distinguished tea collection.</p>
             </div>
             <div className={styles.displayProducts} data-aos="fade-up">
-
                 {error && <p>{error}</p>}
-
                 {documents && <Products products={documents} />}
             </div>
         </div>

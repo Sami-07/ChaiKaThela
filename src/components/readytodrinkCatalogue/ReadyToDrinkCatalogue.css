@@ -4,7 +4,6 @@
     margin-top: 20px;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-    /* position: relative; */
     text-align: center;
 }
 
@@ -30,8 +29,6 @@
 
 @media(max-width:1000px) {
     .rtdMain {
-
         grid-template-columns: 1fr 1fr;
-
     }
 }
