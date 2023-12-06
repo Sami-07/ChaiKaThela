@@ -53,7 +53,7 @@ export default function CustomRecipe() {
     }
     return (
         <div data-aos="fade-up" >
-   {isPending ? <Backdrop /> : ""}
+
             <div className="customRecipeMain"  >
 
                 <div class="customRecipeHookImg">

@@ -88,7 +88,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
     .right {
         display: none;
     }
@@ -145,10 +145,32 @@
 
     .navbar {
         width: 95vw;
+    
+
+      
     }
 
     .hamburger span {
-        background-color: #FBEAFF;
+    
         border-radius: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .hamburger span {
+        background-color: white;  
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .navbar {
+        width: 100vw;
+    
+
+      
     }
 }

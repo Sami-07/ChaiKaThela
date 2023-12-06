@@ -14,11 +14,11 @@ export default function CustomOrdersList({ allItems }) {
                     <div>
                         <p className="recipeName"><strong>{order.recipeName}</strong> </p>
                         <div className="allIngs">
-                            <p className=""><em className="ingsAdded">Ingredients Added :</em> </p> {order.customIngs.map((eachIng) => (
+                            <p className=""><strong className="ingsAdded">Ingredients Added :</strong> </p> {order.customIngs.map((eachIng) => (
                                 <p className="eachIng">{eachIng}</p>
                             ))}
                         </div>
-                        <div className="cookingDesc"> <p ><em>Instructions:</em> </p>   {order.cookingInstr}</div>
+                        <div className="cookingDesc"> <p ><strong className="cookingInstrucions">Instructions:</strong> </p>   {order.cookingInstr}</div>
                     </div>
                     <div className="extremeRightCustom">
                         <strong>   <p>TOTAL</p>  </strong>

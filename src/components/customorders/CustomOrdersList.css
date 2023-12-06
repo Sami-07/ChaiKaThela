@@ -10,6 +10,8 @@
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     position: relative;
+    font-size: 0.7rem;
+
 }
 
 .removedFromCart {
@@ -32,6 +34,8 @@
 
 .ingsAdded {
     padding-bottom: 10px;
+    font-size: 0.6rem;
+    opacity: 0.9;
 }
 
 .allIngs p {
@@ -47,8 +51,13 @@
 .cookingDesc {
     display: flex;
     flex-direction: column;
-}
 
+   
+}
+.cookingInstrucions {
+    font-size: 0.6rem;
+    opacity: 0.9;
+}
 .removeBtn {
     background: none;
     border: none;
@@ -76,16 +85,28 @@ eachIng:last-child::after {
 @media(max-width:1200px) {
     .eachCustom {
         width: 87vw;
-        grid-template-columns: 30vw 40vw 10vw;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
     }
+
+
+    .removeBtn {
+        background: none;
+        border: none;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
 
     .recipeName {
         margin-bottom: 10px;
     }
 
     .itemImg {
-        width: 120px;
-        height: 110px;
+        width: 80px;
+        height: 80px;
         margin: auto;
     }
 

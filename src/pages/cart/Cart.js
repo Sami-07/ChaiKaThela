@@ -95,7 +95,7 @@ export default function Cart() {
         if (customOrders.length > 0) {
             addDocument({ userId: user.uid, placed: documents, total: total + shippingCost + customTeaTotal, delivered: false, customOrders: customOrders }).then(() => {
                 setTimeout(() => {
-                    history.push("/")
+                    history.push("/profile")
                     window.scrollTo(0, 0)
                 }, 3000)
             })
@@ -169,7 +169,7 @@ export default function Cart() {
                         </div>
                  
                         {(addressAdded && !placed) && <MyButton bgColor={color} functionName={handleClick} btnText="PLACE ORDER" fontSize="18px" width="150px" height="50px" borderRadius="5px" />}
-                        {placed && <Backdrop />}
+                       
                         {placed && <MyButton functionName={handleClick} btnText="ORDER PLACED!" bgColor="green" fontSize="18px" width="200px" height="50px" borderRadius="5px" />}
 
                     </div>

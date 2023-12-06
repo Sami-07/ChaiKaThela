@@ -12,6 +12,7 @@ export default function Products({ products }) {
   const [addedToCart, setAddedToCart] = useState([]);
   const [buttonText, setButtonText] = useState('ADD');
   const [isPending, setIsPending] = useState(false)
+  const [loadingbar, setLoadingbar] = useState(false)
   const { color, changeColor } = useTheme()
   async function handleClick(e, index) {
     e.preventDefault();
@@ -19,8 +20,10 @@ export default function Products({ products }) {
     setIsPending(true)
     const docRef = projectFirestore.collection('products').doc(itemId);
     const clickedDocument = await docRef.get();
+
     addDocument({ ...clickedDocument.data(), uid: user.uid })
       .then(() => {
+
         const updatedAddedToCart = [...addedToCart];
         updatedAddedToCart[index] = true;
         setAddedToCart(updatedAddedToCart);
@@ -49,7 +52,7 @@ export default function Products({ products }) {
 
   return (
     <>
-      {isPending ? <Backdrop /> : ""}
+      {/* {isPending ? <Backdrop /> : ""} */}
       <div className="rtdMain">
         {products.map((product, index) => (
           <form className="eachRtdItem" key={index}>
@@ -65,13 +68,14 @@ export default function Products({ products }) {
               onClick={(e) => handleClick(e, index)}
               style={{ backgroundColor: addedToCart[index] ? 'green' : color }}
             >
+             
               {addedToCart[index] ? 'ADDED TO CART' : 'ADD'}
             </button>
-
+          
           </form>
-
+        
         ))}
-      
+        {isPending && <Backdrop />}
       </div>
     </>
   );

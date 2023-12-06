@@ -158,3 +158,23 @@ margin: 0;
    
     } */
 }
+
+@media(max-width: 380px){
+
+    .subCol2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-rows: 60px 60px;
+     
+       
+    }
+    .contactCol2 input{
+    height: 40px;
+    width: 70vw;
+ margin: auto;
+    }
+    .contactCol2{
+        margin-bottom: 100px;
+    }
+}

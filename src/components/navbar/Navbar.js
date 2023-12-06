@@ -82,7 +82,8 @@ export default function Navbar() {
             </div>
             {
                 user &&
-                <Link to="/cart">
+                
+                <Link to="/cart" onClick={NavClick}>
                     <img src={cartIcon} className={`cartIcon ${clicked ? "cartIconResp" : ""}`} style={{ background: color }} ></img>
                 </Link>
             }

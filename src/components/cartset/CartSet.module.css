@@ -55,18 +55,22 @@
 @media(max-width:1200px) {
     .eachCart {
         width: 90vw;
-        display: flex;
-        gap: 10px;
-        margin: 0;
-        margin: 10px 0;
-        padding: 0;
-        padding: 10px 0;
+   
         position: relative;
+font-size: 0.7rem;
+
+
+     
+        grid-template-columns: 0.5fr 2fr 0.5fr;
+        grid-gap: 10px;
+       
+
+
 
     }
     .itemImg {
-        width: 120px;
-        height: 140px;
+        width: 80px;
+        height: 80px;
         padding-left: 10px;
         padding-right: 5px;
         padding-top: 10px;

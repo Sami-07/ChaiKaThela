@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import About from "../about/About"
 import Catalogue from "../catalogue/Catalogue"
 import Contact from "../contact/Contact"
+import CustomRecipe from "../customrecipe/CustomRecipe"
 import AiTea2 from "../../images/AiTea2.png"
 import AOS from "aos"
 import "aos/dist/aos.css";

@@ -56,3 +56,13 @@
 
     }
 }
+
+
+
+@media(max-width: 380px){
+    .rtdMain {
+
+        grid-template-columns: 1fr;
+
+    }
+}

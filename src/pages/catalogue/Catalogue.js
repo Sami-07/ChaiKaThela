@@ -5,9 +5,10 @@ import { useCollection } from "../../hooks/useCollection"
 import AOS from "aos"
 import "aos/dist/aos.css";
 import { useEffect } from "react"
+import Backdrop from "../../components/backdrop/Backdrop"
 export default function Catalogue() {
     useEffect(() => {
-        AOS.init({ duration: 3000 })
+        AOS.init({ duration: 2000 })
     }, [])
     const { documents, error } = useCollection("products")
 
@@ -24,6 +25,8 @@ export default function Catalogue() {
             </div>
             <div className={styles.displayProducts} data-aos="fade-up">
                 {error && <p>{error}</p>}
+
+                {!documents && <Backdrop />}
                 {documents && <Products products={documents} />}
             </div>
         </div>
